@@ -9,12 +9,25 @@
     tools:context=".MainActivity">
 
     <com.jimes.gesturelockview.guesturelockview.GestureLockThumbnailView
+        android:id="@+id/gesThu"
         android:layout_width="80dp"
-        android:layout_height="80dp" />
+        android:layout_height="80dp"
+        app:thumbnail_color="#0f0"
+        app:thumbnail_ratio="0.5" />
 
     <com.jimes.gesturelockview.guesturelockview.GestureLockView
+        android:id="@+id/gesLv"
         android:layout_width="250dp"
-        android:layout_height="250dp" />
+        android:layout_height="250dp"
+        app:line_thickness="3dp"
+        app:normal_color="#111"
+        app:press_color="#00f"
+        app:radius_ratio="0.5"
+        app:error_color="#f00"
+        app:is_show_guides="true"
+        app:is_line_top="true"
+        app:is_use_animation="true"
+        app:is_use_vibrate="false"/>
 
 
 </LinearLayout>
